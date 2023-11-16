@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team2-LumIEx-organization/Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team2-LumIEx-organization/Backend/issues"
+  },
+  "homepage": "https://github.com/Team2-LumIEx-organization/Backend#readme",
+  "dependencies": {
+    "node": "^21.1.0"
+  }
+}
