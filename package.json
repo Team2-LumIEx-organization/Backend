@@ -1,22 +1,44 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
+  "name": "express-api-starter",
+  "version": "1.2.0",
+  "description": " A basic starter for an express.js API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint --fix src",
+    "test": "mocha --exit",
+    "seed:admin": "node src/tasks/createAdminUser.js"
   },
+  "keywords": [],
+  "author": "CJ R. <cj@null.computer> (https://w3cj.now.sh)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Team2-LumIEx-organization/Backend.git"
+    "url": "https://github.com/w3cj/express-api-starter.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Team2-LumIEx-organization/Backend/issues"
-  },
-  "homepage": "https://github.com/Team2-LumIEx-organization/Backend#readme",
+  "license": "MIT",
   "dependencies": {
-    "node": "^21.1.0"
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.15",
+    "monk": "^7.3.2",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.1"
   }
 }
