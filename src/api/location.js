@@ -18,6 +18,55 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/:locationId/:cabinentId', verifyToken, async (req, res) => {
+  try {
+    const locationId = req.params.locationId
+    const cabinentId = req.params.cabinentId
+    const location = await Location.find({ location_id: locationId },
+      { location_id: 1, "cabinents.occupied": 1, "cabinents.id": 1, "cabinents.key": 1, "cabinents.user": 1 });
+    let key = ''
+    console.log('req.user', location[0].cabinents)
+
+    location[0].cabinents.map(item => {
+      if (item.id === Number(cabinentId)) {
+        key = item.key
+      }
+    })
+    res.status(201).send(key);
+
+  } catch (err) {
+    console.log(err)
+    res.status(400).send(err);
+  }
+});
+
+router.post('/unlock', async (req, res) => {
+  try {
+    const { locationId, cabinentId, key } = req.body
+    const location = await Location.find({ location_id: locationId },
+      { location_id: 1, "cabinents.occupied": 1, "cabinents.id": 1, "cabinents.key": 1, "cabinents.user": 1, "cabinents.parcel": 1 });
+    let cabinentKey = ''
+    let cabinentParcel = ''
+    console.log('location', location[0].cabinents)
+    location[0].cabinents.map(item => {
+      if (item.id === Number(cabinentId)) {
+        cabinentKey = item.key
+        cabinentParcel = item.cabinentParcel
+      }
+    })
+    let parcel
+    if(cabinentParcel){
+      parcel = Parcel.findById(cabinentParcel)
+    }
+    console.log('parcel', parcel)
+    res.status(201).send(key);
+
+  } catch (err) {
+    console.log(err)
+    res.status(400).send(err);
+  }
+});
+
 router.post('/reseve-cabinent', verifyToken, async (req, res) => {
   try {
     const userId = req.user._id
