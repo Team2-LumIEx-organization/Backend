@@ -4,10 +4,10 @@
 
 The project is developed by the second-year Information Technology students from Oulu University of Applied Sciences:
 
-- **Ashif Moon**, [GitHub account]()
-- **Lufei Wu**, [GitHub account]()
-- **Minyi Zhang**, [GitHub account]()
-- **Ziqi Li**, [GitHub account]()
+- **Ashif Moon**, [GitHub account](https://github.com/AshifkhaMoon)
+- **Lufei Wu**, [GitHub account](https://github.com/lufeiwu22)
+- **Minyi Zhang**, [GitHub account](https://github.com/minyizhangg)
+- **Ziqi Li**, [GitHub account](https://github.com/ZiqiLi28)
 
 We have been working together throughout the whole project and everyone has been equally involved in all the parts of the development process.
 
@@ -51,7 +51,7 @@ Tools
 
 ## Application Architecture Diagram
 
-![1701689655296](https://github.com/AWAP-Group9/Backend/assets/95314108/5ecd7e16-f7c8-4367-8ef3-91d7dc306576)
+
 
 
 ## Interface description
