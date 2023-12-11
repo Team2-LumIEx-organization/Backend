@@ -96,22 +96,30 @@ Follow these steps to get started with the app development:
 4. Start the development server:
    
    ```bash
-  1 Backend -> npm create-driver
+  1 Backend -> ```bash
+               npm create-driver
                npm create-locations
                npm run dev
+                ```
    
-  2 ConsumerAppFrontend -> cd ConsumerAppFrontend
+  2 ConsumerAppFrontend -> ```bash
+                           cd ConsumerAppFrontend
                            npm start
+                           ```
 
-  3 DriverAppFrontend -> cd DriverAppFrontend
+  3 DriverAppFrontend -> ```bash
+                         cd DriverAppFrontend
                          npm start
+                           ```
 
-  4 touchScreenSimulator -> cd touchScreenSimulator
+  4 touchScreenSimulator -> ```bash
+                            touchScreenSimulator
                             npm Start
+                              ```
+  5 Robot               -> ```bash cd Backend
+                            npm run run-robot
+                             ```**************************************
 
-  5 Robot               ->  cd Backend
-                            npm run run-robot **************************************
+               
 
-
-   ```
  ****  - Note: You might need to modify the .env files to run the Project.The above steps may need to be adjusted depending on the environment. ****
