@@ -40,6 +40,11 @@ Backend:
 Database:
 - MongoDB
 
+Figma Design:
+- Consumer App : https://www.figma.com/file/Jh6BO1iblHtrdlPHXRyt6Q/Lumi-Express?type=design&node-id=0-1&mode=design
+- Driver App : https://www.figma.com/file/Jh6BO1iblHtrdlPHXRyt6Q/Lumi-Express?type=design&node-id=14-2&mode=design&t=AUZti3MdX5fYZ1lM-0
+- Touch Screen Simulator: https://www.figma.com/file/Jh6BO1iblHtrdlPHXRyt6Q/Lumi-Express?type=design&node-id=13-7&mode=design&t=cGiCE7aWjUTsik7F-0
+
 Deployment:
 - Still Under Development
 
