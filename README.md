@@ -41,7 +41,7 @@ Database:
 - MongoDB
 
 Deployment:
-- Azure
+- Still Under Development
 
 Tools
 - UI Design: Figma
