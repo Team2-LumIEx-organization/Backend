@@ -2,19 +2,20 @@
 
 ## The project developers
 
-The project is developed by the second-year Information Technology students from Oulu University of Applied Sciences:
+The project is developed by the second-year Information Technology students from Oulu University of Applied Sciences.In the second period of our second year study we got the opportunity to work on a Advance Web Development Project(Parcel Locker System).We tried our best to fullfil all the reqirements of the project.It was fun and at the same time challanging to impliment all the functionality of the project but at the end we have accomplished the project through teamwork.Introduction of the teammembers:-
+
 
 - **Ashif Moon**, [GitHub account](https://github.com/AshifkhaMoon)
 - **Lufei Wu**, [GitHub account](https://github.com/lufeiwu22)
 - **Minyi Zhang**, [GitHub account](https://github.com/minyizhangg)
 - **Ziqi Li**, [GitHub account](https://github.com/ZiqiLi28)
 
-We have been working together throughout the whole project and everyone has been equally involved in all the parts of the development process.
+We have been working together throughout the whole project and everyone has been equally active in the development of the project.
 
 
 ## Project Overview
 
-The objective of this project was to develop a parcel locker system application, successfully accomplished within the framework of our Advanced Web Application Development course. The system enables users to register, log in, send and receive parcels, and keep track of the status of their parcels in the lockers. The ultimate iteration of the system is intended for deployment on the public internet.
+The objective of this project was to develop a parcel locker system application which in total has three apps Consumer App,Driver App,Touch Screen Simulator and also a Parcel Generator Robot. The Project enables users to register, log in, send and receive parcels, and keep track of the status of their parcels in the lockers and after that a driver will pick up the parcel and deliver it to it's destination.The ultimate iteration of the system is intended for deployment on the public internet.We have successfully accomplished the framework of our Advanced Web Application Development course.
 
 Project Video Demonstration
 
@@ -81,7 +82,7 @@ Follow these steps to get started with the app development:
 2. Navigate to the project's directory:
    
    ```bash
-   cd frontend
+   cd Backend /ConsumerAppFrontend /DriverAppFrontend /touchScreenSimulator
    ```
 
 3. Install the dependencies:
@@ -95,6 +96,22 @@ Follow these steps to get started with the app development:
 4. Start the development server:
    
    ```bash
-   npm run dev
+  1 Backend -> npm create-driver
+               npm create-locations
+               npm run dev
+   
+  2 ConsumerAppFrontend -> cd ConsumerAppFrontend
+                           npm start
+
+  3 DriverAppFrontend -> cd DriverAppFrontend
+                         npm start
+
+  4 touchScreenSimulator -> cd touchScreenSimulator
+                            npm Start
+
+  5 Robot               ->  cd Backend
+                            npm run run-robot **************************************
+
+
    ```
-   - Note: The above steps may need to be adjusted depending on the project.
+ ****  - Note: You might need to modify the .env files to run the Project.The above steps may need to be adjusted depending on the environment. ****
