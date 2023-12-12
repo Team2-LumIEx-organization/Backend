@@ -64,8 +64,7 @@ Tools
 - Version Control: Git and GitHub
 
 ## Application Architecture Diagram
-
-
+![Diagram](https://github.com/Team2-LumIEx-organization/Doc/blob/testplan/Application%20Architecture%20Diagram.jpg?raw=true)
 
 
 ## Interface description
