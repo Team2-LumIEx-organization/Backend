@@ -2,8 +2,9 @@
 
 ## The project developers
 
-The project is developed by the second-year Information Technology students from Oulu University of Applied Sciences.In the second period of our second year study we got the opportunity to work on a Advance Web Development Project(Parcel Locker System).We tried our best to fullfil all the reqirements of the project.It was fun and at the same time challanging to impliment all the functionality of the project but at the end we have accomplished the project through teamwork.Introduction of the teammembers:-
+The project is developed by the second-year Information Technology students from Oulu University of Applied Sciences.In the second period of our second year study we got the opportunity to work on a Advance Web Development Project(Parcel Locker System).We tried our best to fullfil all the reqirements of the project.It was fun and at the same time challenging to impliment all the functionality of the project but at the end we have accomplished the project through teamwork.
 
+Introduction of the teammembers:-
 
 - **Ashif Moon**, [GitHub account](https://github.com/AshifkhaMoon)
 - **Lufei Wu**, [GitHub account](https://github.com/lufeiwu22)
@@ -40,11 +41,6 @@ Backend:
 
 Database:
 - MongoDB
-
-Figma Design:
-- Consumer App : https://www.figma.com/file/Jh6BO1iblHtrdlPHXRyt6Q/Lumi-Express?type=design&node-id=0-1&mode=design
-- Driver App : https://www.figma.com/file/Jh6BO1iblHtrdlPHXRyt6Q/Lumi-Express?type=design&node-id=14-2&mode=design&t=AUZti3MdX5fYZ1lM-0
-- Touch Screen Simulator: https://www.figma.com/file/Jh6BO1iblHtrdlPHXRyt6Q/Lumi-Express?type=design&node-id=13-7&mode=design&t=cGiCE7aWjUTsik7F-0
 
 Deployment:
 - Still Under Development
@@ -95,7 +91,10 @@ Follow these steps to get started with the app development:
 
 4. Start the development server:
    
-   ```bash
+      ```bash
+   npm start
+   ```
+
   1 Backend -> ```bash
                npm create-driver
                npm create-locations
@@ -116,9 +115,11 @@ Follow these steps to get started with the app development:
                             touchScreenSimulator
                             npm Start
                               ```
-  5 Robot               -> ```bash cd Backend
+  5 Robot               -> ```bash 
+                            cd Backend
                             npm run run-robot
-                             ```**************************************
+                             ```
+**************************************
 
                
 
