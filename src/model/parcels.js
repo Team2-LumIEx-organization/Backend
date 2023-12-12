@@ -52,6 +52,11 @@ const Parcel = new mongoose.Schema({
   location: {
     type: Number,
   },
+  notified:{
+    type: Boolean, 
+    required: true,
+    default: false
+  },
   cabinent: {
     type: Number,
   }

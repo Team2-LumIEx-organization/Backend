@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const generateRandomString = require('../utils/generate-code');
 const Location = require('../model/Location');
+const Parcel = require('../model/parcels');
 const middlewares = require('../middlewares');
 
 const { verifyToken } = middlewares;
@@ -81,6 +82,25 @@ router.post('/reseve-cabinent', verifyToken, async (req, res) => {
     });
     res.status(201).send(updatedLocation);
 
+  } catch (err) {
+    res.status(400).send(err);
+  }
+});
+router.get('/notifications', verifyToken, async (req, res) => {
+  try {
+    const userId = req.user._id
+    const parcels = await Parcel.find({ reciver: userId, delivery_status: 'READY_TO_PICKUP', notified: false }).populate('reciver', 'email').populate('sender', 'email').sort({ _id: -1 });
+    res.status(201).send(parcels);
+  } catch (err) {
+    res.status(400).send(err);
+  }
+});
+
+router.get('/remove-notifications', verifyToken, async (req, res) => {
+  try {
+    const userId = req.user._id
+    const parcels = await Parcel.updateMany({ reciver: userId, delivery_status: 'READY_TO_PICKUP', notified: false }, {$set: {notified: true}});
+    res.status(201).send(parcels);
   } catch (err) {
     res.status(400).send(err);
   }

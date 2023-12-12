@@ -18,6 +18,7 @@ router.post('/register', async (req, res) => {
   const user = new User({
     email: req.body.email,
     password: hashedPassword,
+    name: req.body.name
   });
   try {
     const savedUser = await user.save();
@@ -31,7 +32,8 @@ function createTokenSendResponse(user, res) {
   const payload = {
     _id: user._id,
     email: user.email,
-    type: user.type
+    type: user.type,
+    name: user.name
   };
   const token = jwt.sign(payload, 'TOKEN_SECRET', { expiresIn: '1d' });
   res.header('token', token).json({ token, _id: user._id, email: user.email });
