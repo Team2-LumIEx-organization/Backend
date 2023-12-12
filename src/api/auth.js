@@ -5,6 +5,8 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../model/User');
 const { registerValidation, loginValidation } = require('../validation/auth');
+const middlewares = require('../middlewares');
+const { verifyToken } = middlewares;
 
 const router = express.Router();
 
@@ -53,9 +55,10 @@ router.post('/login', async (req, res, next) => {
     // next(error);
   }
 });
-router.post('/delete', async (req, res, next) => {
+router.post('/delete', verifyToken, async (req, res, next) => {
   try {
-    await User.findOneAndUpdate({ email: req.body.email, is_deleted: true });
+    const userId = req.user._id
+    await User.findOneAndUpdate({ _id: userId}, {$set: {is_deleted: true} });
     return res.status(200).send('succeess');
 
   } catch (error) {
