@@ -11,7 +11,19 @@ Introduction of the teammembers:-
 - **Minyi Zhang**, [GitHub account](https://github.com/minyizhangg)
 - **Ziqi Li**, [GitHub account](https://github.com/ZiqiLi28)
 
-We have been working together throughout the whole project and everyone has been equally active in the development of the project.
+Ashif Moon:
+Ashif Handles the development of fundamental components for the backend driver app, and refining the UI design of the consumer app.
+
+Lufei Wu:
+Lufei Wu takes responsibilities for the frontend development of the Consumer App, and API tests.
+
+Minyi Zhang:
+Minyi Zhang is charge in the frontend development of the Touch Screen App, Authentication for the consumer app and React tests.
+
+Ziqi Li:
+Ziqi Li holds the reins in backend development, the dashboard page for both the driver and consumer.
+
+In the development of our team's project, each member has assumed primary responsibilities. Simultaneously, everyone is engaged in tasks such as searching and discussing details taking on distinct functions in apps. We collaborate to aid the main responsible person in problem-solving when necessary. Everyone has been active equally.
 
 
 ## Project Overview
