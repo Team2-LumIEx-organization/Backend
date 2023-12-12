@@ -14,6 +14,11 @@ const User = new mongoose.Schema({
     max: 200,
     min: 6,
   },
+   name: {
+    type: String,
+    max: 200,
+    min: 6,
+  },
   type: {
     type: String,
     required: true,

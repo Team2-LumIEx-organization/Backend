@@ -8,7 +8,8 @@
     "dev": "nodemon src/index.js",
     "lint": "eslint --fix src",
     "test": "mocha --exit",
-    "seed:admin": "node src/tasks/createAdminUser.js"
+    "seed:admin": "node src/tasks/createAdminUser.js",
+    "run-robot": "node src/robot/index.js"
   },
   "keywords": [],
   "author": "CJ R. <cj@null.computer> (https://w3cj.now.sh)",
@@ -31,6 +32,7 @@
     "mongoose": "^5.11.15",
     "monk": "^7.3.2",
     "morgan": "^1.10.0",
+    "node-cron": "^3.0.3",
     "socket.io": "^4.0.0"
   },
   "devDependencies": {
