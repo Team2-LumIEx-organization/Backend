@@ -2,7 +2,7 @@
 
 ## The project developers
 
-The project is developed by the second-year Information Technology students from Oulu University of Applied Sciences.In the second period of our second year study we got the opportunity to work on a Advance Web Development Project(Parcel Locker System).We tried our best to fullfil all the reqirements of the project.It was fun and at the same time challenging to impliment all the functionality of the project but at the end we have accomplished the project through teamwork.
+The project is developed by the second-year Information Technology students from Oulu University of Applied Sciences.In the second period of our second year study we got the opportunity to work on a Advance Web Development Project(Parcel Locker System). We tried our best to fullfil all the reqirements of the project. It was fun and at the same time challenging to impliment all the functionality of the project but at the end we have accomplished the project through teamwork.
 
 Introduction of the teammembers:-
 
@@ -28,7 +28,7 @@ In the development of our team's project, each member has assumed primary respon
 
 ## Project Overview
 
-The objective of this project was to develop a parcel locker system application which in total has three apps Consumer App,Driver App,Touch Screen Simulator and also a Parcel Generator Robot. The Project enables users to register, log in, send and receive parcels, and keep track of the status of their parcels in the lockers and after that a driver will pick up the parcel and deliver it to it's destination.The ultimate iteration of the system is intended for deployment on the public internet.We have successfully accomplished the framework of our Advanced Web Application Development course.
+The objective of this project was to develop a parcel locker system application which in total has three apps Consumer App,Driver App, Touch Screen Simulator and also a Parcel Generator Robot. The Project enables users to register, log in, send and receive parcels, and keep track of the status of their parcels in the lockers and after that a driver will pick up the parcel and deliver it to it's destination.The ultimate iteration of the system is intended for deployment on the public internet.We have successfully accomplished the framework of our Advanced Web Application Development course.
 
 Project Video Demonstration
 
@@ -107,8 +107,8 @@ Follow these steps to get started with the app development:
    ```
 
   1 Backend -> ```bash
-               npm create-driver
-               npm create-locations
+               npm run create-driver
+               npm run create-locations
                npm run dev
                 ```
    
