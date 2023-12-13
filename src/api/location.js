@@ -54,7 +54,9 @@ router.get("/:locationId/:cabinentId", verifyToken, async (req, res) => {
 router.post("/unlock", async (req, res) => {
   try {
     const { error } = unLockValidation(req.body);
-    if (error) res.status(400).send(error.details[0].message);
+    if (error) {
+      return res.status(400).send(error.details[0].message);
+    }
     const { locationId, cabinentId, key } = req.body;
     const location = await Location.find(
       { location_id: locationId },
