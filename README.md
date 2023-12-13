@@ -15,10 +15,10 @@ Ashif Moon:
 Ashif Handles the development of fundamental components for the backend driver app, and refining the UI design of the consumer app.
 
 Lufei Wu:
-Lufei Wu takes responsibilities for the frontend development of the Consumer App, getting password for the cosumer app and API tests.
+Lufei Wu takes responsibilities for the frontend development of the consumer App, getting password for the cosumer app and API tests.
 
 Minyi Zhang:
-Minyi Zhang is charge in the frontend development of the Touch Screen App, Authentication for the consumer app and React tests.
+Minyi Zhang is charge in the frontend development of the touch screen App, Authentication for the consumer app and React tests.
 
 Ziqi Li:
 Ziqi Li holds the reins in backend development, the dashboard page for both the driver and consumer.
