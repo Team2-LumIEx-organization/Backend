@@ -9,6 +9,8 @@
     "lint": "eslint --fix src",
     "test": "mocha --exit",
     "seed:admin": "node src/tasks/createAdminUser.js",
+    "create-driver": "node src/tasks/createDriver.js",
+    "create-locations": "node src/tasks/createLocation.js",
     "run-robot": "node src/robot/index.js"
   },
   "keywords": [],
